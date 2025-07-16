@@ -6,6 +6,7 @@ import React from 'react';
 import { usePrevNextButtons } from './EmblaCarouselArrowButton';
 import { ArrowLeft, ArrowRight } from 'lucide-react';
 import Image from 'next/image';
+import { cn } from '@/lib/utils';
 
 const TestimonialsList = [
 	{
@@ -47,7 +48,12 @@ export default function Testimonials() {
 		containScroll: undefined,
 	});
 
-	const { onPrevButtonClick, onNextButtonClick } = usePrevNextButtons(emblaApi);
+	const {
+		onPrevButtonClick,
+		onNextButtonClick,
+		prevBtnDisabled,
+		nextBtnDisabled,
+	} = usePrevNextButtons(emblaApi);
 
 	return (
 		<div className="bg-primary text-white">
@@ -79,11 +85,9 @@ export default function Testimonials() {
 
 											<div className="flex gap-2">
 												<div className="size-12 rounded-full relative overflow-hidden">
-													<Image
+													<img
 														className="absolute size-full object-cover"
-														src={
-															'https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg'
-														}
+														src={`https://api.dicebear.com/9.x/glass/svg?seed=${t.username.trim()}`}
 														alt="resident client"
 														width={900}
 														height={900}
@@ -106,18 +110,30 @@ export default function Testimonials() {
 
 					<div className="">
 						<div className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-4xl mx-auto flex flex-row-reverse justify-between items-center h-full">
-							<div
+							<button
+								disabled={nextBtnDisabled}
 								onClick={onNextButtonClick}
-								className="bg-white drop-shadow-2xl size-fit rounded-full p-3"
+								className={cn(
+									'bg-white drop-shadow-2xl size-fit rounded-full p-3 transition-colors duration-200 hover:bg-gray-100 active:scale-95',
+									{
+										'opacity-50 pointer-events-none': nextBtnDisabled,
+									}
+								)}
 							>
 								<ArrowRight className="text-black" />
-							</div>
-							<div
+							</button>
+							<button
+								disabled={prevBtnDisabled}
 								onClick={onPrevButtonClick}
-								className="bg-white drop-shadow-2xl size-fit rounded-full p-3"
+								className={cn(
+									'bg-white drop-shadow-2xl size-fit rounded-full p-3 transition-colors duration-200 hover:bg-gray-100 active:scale-95',
+									{
+										'opacity-50 pointer-events-none': prevBtnDisabled,
+									}
+								)}
 							>
 								<ArrowLeft className="text-black" />
-							</div>
+							</button>
 						</div>
 					</div>
 				</div>
