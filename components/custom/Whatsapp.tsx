@@ -7,7 +7,7 @@ export default function Whatsapp() {
 	//from-[#1FE9A3] to-[#00CF8E]
 	return (
 		<Link
-			href={'#'}
+			href={'https://wa.link/wa3emf'}
 			className="bg-linear-65 from-[#1FE9A3] to-[#00CF8E] w-fit fixed bottom-0 right-0 rounded-full p-2 z-20 m-4"
 		>
 			<svg

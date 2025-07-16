@@ -7,6 +7,18 @@ import Masonry from 'react-masonry-css';
 import { Button } from '../ui/button';
 import Link from 'next/link';
 
+import image_1 from '@/assets/images/1.jpg';
+import image_2 from '@/assets/images/2.jpg';
+import image_3 from '@/assets/images/3.jpg';
+import image_4 from '@/assets/images/4.jpg';
+import image_5 from '@/assets/images/5.jpg';
+import image_6 from '@/assets/images/6.jpg';
+import image_7 from '@/assets/images/7.jpg';
+import image_8 from '@/assets/images/8.jpg';
+import image_9 from '@/assets/images/9.jpg';
+import image_10 from '@/assets/images/10.jpg';
+import image_11 from '@/assets/images/11.jpg';
+
 const breakpointColumnsObj = {
 	default: 3,
 	1100: 2,
@@ -14,17 +26,31 @@ const breakpointColumnsObj = {
 };
 
 export default function Photos() {
+	// const images = [
+	// 	'https://images.pexels.com/photos/713297/pexels-photo-713297.jpeg',
+	// 	'https://images.pexels.com/photos/4108715/pexels-photo-4108715.jpeg',
+	// 	'https://images.pexels.com/photos/4239031/pexels-photo-4239031.jpeg',
+	// 	'https://images.pexels.com/photos/245219/pexels-photo-245219.jpeg',
+	// 	'https://images.pexels.com/photos/3616746/pexels-photo-3616746.jpeg',
+	// 	'https://images.pexels.com/photos/358592/pexels-photo-358592.jpeg',
+	// 	'https://images.pexels.com/photos/4239145/pexels-photo-4239145.jpeg',
+	// 	'https://images.pexels.com/photos/4099468/pexels-photo-4099468.jpeg',
+	// 	'https://images.pexels.com/photos/271631/pexels-photo-271631.jpeg',
+	// 	'https://images.pexels.com/photos/4099260/pexels-photo-4099260.jpeg',
+	// ];
+
 	const images = [
-		'https://images.pexels.com/photos/713297/pexels-photo-713297.jpeg',
-		'https://images.pexels.com/photos/4108715/pexels-photo-4108715.jpeg',
-		'https://images.pexels.com/photos/4239031/pexels-photo-4239031.jpeg',
-		'https://images.pexels.com/photos/245219/pexels-photo-245219.jpeg',
-		'https://images.pexels.com/photos/3616746/pexels-photo-3616746.jpeg',
-		'https://images.pexels.com/photos/358592/pexels-photo-358592.jpeg',
-		'https://images.pexels.com/photos/4239145/pexels-photo-4239145.jpeg',
-		'https://images.pexels.com/photos/4099468/pexels-photo-4099468.jpeg',
-		'https://images.pexels.com/photos/271631/pexels-photo-271631.jpeg',
-		'https://images.pexels.com/photos/4099260/pexels-photo-4099260.jpeg',
+		image_1,
+		image_2,
+		image_3,
+		image_4,
+		image_5,
+		image_6,
+		image_7,
+		image_8,
+		image_9,
+		image_10,
+		image_11,
 	];
 
 	return (
@@ -62,7 +88,7 @@ export default function Photos() {
 				asChild
 				className="rounded-full cursor-pointer p-6 text-md font-heading text-md w-fit relative mx-auto flex justify-center"
 			>
-				<Link href={'#'} className="">
+				<Link href={'tel:+2250505404866'} className="">
 					Contactez-nous
 				</Link>
 			</Button>

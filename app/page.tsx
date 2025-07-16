@@ -89,14 +89,15 @@ export default function Home() {
 
 						<p className="text-slate-400 text-lg md:text-left text-center md:w-[500px]">
 							Nous sommes une entreprise avec 10 ans d&apos;expérience dans le
-							nettoyage résidentiel, commercial et industriel en profondeur.
+							nettoyage résidentiel, commercial et industriel en profondeur,
+							partout à Abidjan.
 						</p>
 
 						<Button
 							asChild
 							className="rounded-full cursor-pointer p-6 text-md font-heading text-md w-fit relative md:mx-0 mx-auto mt-8 flex justify-center"
 						>
-							<Link href={'#'} className=" ">
+							<Link href={'tel:+2250505404866'} className=" ">
 								Contactez-nous
 							</Link>
 						</Button>
@@ -180,7 +181,7 @@ export default function Home() {
 					asChild
 					className="rounded-full cursor-pointer p-6 text-md font-heading text-md w-fit relative mx-auto flex justify-center"
 				>
-					<Link href={'#'} className=" ">
+					<Link href={'https://wa.link/wa3emf'} className=" ">
 						Demandez un devis
 					</Link>
 				</Button>
@@ -259,7 +260,7 @@ export default function Home() {
 								asChild
 								className="rounded-full cursor-pointer p-6 text-md font-heading text-md w-fit relative mx-auto mt-8"
 							>
-								<Link href={'#'} className="">
+								<Link href={'tel:+2250505404866'} className="">
 									Contactez-nous
 								</Link>
 							</Button>
@@ -379,8 +380,8 @@ export default function Home() {
 						</h1>
 						<p className="md:w-[34em] text-slate-400 text-lg">
 							Nous contacter est très simple, vous pouvez nous appeler ou nous
-							écrire au numéro de téléphone portable 55 1473 4283 ou nous
-							envoyer un email à deepcleaning2626@gmail.com
+							écrire au numéro de téléphone portable +225 05 05 40 48 66 ou nous
+							envoyer un email à yemira5@yahoo.fr
 						</p>
 					</div>
 
@@ -388,7 +389,7 @@ export default function Home() {
 						asChild
 						className="rounded-full cursor-pointer p-6 text-md font-heading text-md md:w-fit w-full relative"
 					>
-						<Link href={'#'} className=" capitalize">
+						<Link href={'https://wa.link/wa3emf'} className=" capitalize">
 							Whatsapp
 						</Link>
 					</Button>

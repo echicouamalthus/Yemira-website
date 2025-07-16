@@ -3,12 +3,9 @@ import './globals.css';
 import NavBar from '@/components/custom/NavBar';
 import Whatsapp from '@/components/custom/Whatsapp';
 import Footer from '@/components/custom/Footer';
+import { constructMetada } from '@/lib/utils';
 
-export const metadata: Metadata = {
-	title: 'Nettoyage en Profondeur - Deep Cleaning',
-	description:
-		'Nous sommes une entreprise spécialisée dans le nettoyage en profondeur avec 10 ans d’expérience. Depuis 2010, nous travaillons sur des projets résidentiels, commerciaux et industriels autour de la Ville de Mexico. Aujourd’hui, nous disposons d’un portefeuille important de clients satisfaits, générant un impact positif dans leur vie. Notre excellence dans le service client, la ponctualité, la qualité de nos machines et de nos produits nous distinguent. Tout cela est possible grâce à notre personnel hautement qualifié.',
-};
+export const metadata = constructMetada;
 
 export default function RootLayout({
 	children,
