@@ -21,11 +21,11 @@ export function constructMetada({
 		title,
 		description,
 		icons,
-		metadataBase: new URL('https://yemira-website.vercel.app/'),
+		metadataBase: new URL('https://yemira-website.vercel.app'),
 		openGraph: {
 			title,
 			description,
-			url: 'https://yemira-website.vercel.app/',
+			url: 'https://yemira-website.vercel.app',
 			siteName: 'YEMIRA service',
 			images: [
 				{
