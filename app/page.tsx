@@ -9,6 +9,7 @@ import Image_ from '@/assets/images/hero-image.png';
 import Image_1 from '@/assets/images/Image_1.png';
 import Image_2 from '@/assets/images/Image_2.png';
 import logo from '@/assets/images/logo.png';
+import brand from '@/assets/images/brand.png';
 
 const SOLUTION = [
 	{
@@ -76,7 +77,7 @@ export default function Home() {
 					<div className="space-y-2">
 						<div className="flex justify-center md:hidden">
 							<Image
-								src={logo}
+								src={brand}
 								alt="Logo représentant une entreprise de nettoyage"
 								height={100}
 								width={100}
