@@ -85,7 +85,7 @@ export default function Home() {
 						</div>
 						<h1 className="md:text-6xl text-5xl md:text-left text-center font-heading">
 							<span className="text-primary">Nettoyage</span> professionnel et
-							en profondeur
+							en profondeur {/* dfljsndfdf */}
 						</h1>
 
 						<p className="text-slate-400 text-lg md:text-left text-center md:w-[500px]">
